@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('A home da minha aplicação', function () {
   it('apresenta o título da aplicação', function () {
     cy.visit('http://localhost:4200/');
@@ -17,7 +19,7 @@ describe('A home da minha aplicação', function () {
 
   it('no botão carregar mais resultados deve apresentar o restante da grid', function () {
     cy.visit('http://localhost:4200/');
-    cy.get('.po-offset-xl-4 > .po-button').click()
+    cy.get('.po-offset-xl-4 > .po-button').click();
     cy.get(':nth-child(14) > .po-table-row > :nth-child(2) > .po-table-column-cell > span').should('contain.text', 'Leonardo');
   });
 
