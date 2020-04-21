@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PoPageDynamicDetailActions, PoPageDynamicDetailField } from '@portinari/portinari-templates';
+import { PoPageDynamicDetailActions, PoPageDynamicDetailField } from '@po-ui/ng-templates';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

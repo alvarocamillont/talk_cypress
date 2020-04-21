@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PoPageDynamicTableActions, PoPageDynamicTableField } from '@portinari/portinari-templates';
+import { PoPageDynamicTableActions, PoPageDynamicTableField } from '@po-ui/ng-templates';
 
 @Component({
   selector: 'app-people-list',

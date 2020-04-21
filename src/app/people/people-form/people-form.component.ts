@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PoPageDynamicEditActions, PoPageDynamicEditField } from '@portinari/portinari-templates';
+import { PoPageDynamicEditActions, PoPageDynamicEditField } from '@po-ui/ng-templates';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

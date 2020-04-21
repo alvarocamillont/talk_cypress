@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { PoModule } from '@portinari/portinari-ui';
-import { PoTemplatesModule } from '@portinari/portinari-templates';
+import { PoModule } from '@po-ui/ng-components';
+import { PoTemplatesModule } from '@po-ui/ng-templates';
 
 @NgModule({
   imports: [
