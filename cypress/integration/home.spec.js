@@ -6,19 +6,19 @@ describe("A home da minha aplicação", function () {
     cy.get(".po-page-header-title").should("contain.text", "Pessoas");
   });
 
-  it("mostra uma grid com o Rogerio", function () {
+  it("mostra uma grid com o Ronaldo", function () {
     cy.visit("http://localhost:4200/");
     cy.get(
       ":nth-child(2) > .po-table-row > :nth-child(2) > .po-table-column-cell > span"
-    ).should("contain.text", "Rogerio");
+    ).should("contain.text", "Ronaldo");
   });
 
-  it("ao pesquisar o Fabio mostra ele selecionado", function () {
+  it("ao pesquisar o Leonardo mostra ele selecionado", function () {
     cy.visit("http://localhost:4200/");
-    cy.get(".po-field-container-content > .po-input").type("Fabio{enter}");
+    cy.get(".po-field-container-content > .po-input").type("Leonardo{enter}");
     cy.get(":nth-child(2) > .po-table-column-cell > span").should(
       "contain.text",
-      "Fabio"
+      "Leonardo"
     );
   });
 
@@ -27,6 +27,6 @@ describe("A home da minha aplicação", function () {
     cy.get(".po-offset-xl-4 > .po-button").click();
     cy.get(
       ":nth-child(14) > .po-table-row > :nth-child(2) > .po-table-column-cell > span"
-    ).should("contain.text", "Leonardo");
+    ).should("contain.text", "Flavio");
   });
 });
